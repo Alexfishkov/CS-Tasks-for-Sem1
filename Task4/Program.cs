@@ -1,0 +1,12 @@
+﻿Console.Clear();
+Console.WriteLine("Находим максимальное из 3-х, введённых вами чисел");
+Console.Write("Введите первое число=>");
+int firstnumber = Int32.Parse(Console.ReadLine());
+Console.Write("Введите второе число=>");
+int secondnumber = Int32.Parse(Console.ReadLine());
+Console.Write("Введите третье число=>");
+int thirdnumber = Int32.Parse(Console.ReadLine());
+int max = firstnumber;
+if (secondnumber > max) max = secondnumber;
+if (thirdnumber > max) max = thirdnumber;
+Console.WriteLine("Максимальным из них является: " + max);
